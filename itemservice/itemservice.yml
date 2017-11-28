@@ -18,11 +18,18 @@ spring:
     testWhileIdle: "true"
     validationQuery: "SELECT 1"
 
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 server:
   port: 8082
 
-rabbitmq:
-    host: rabbitmq
+
+
 
 eureka:
   instance:

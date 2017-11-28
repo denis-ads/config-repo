@@ -13,12 +13,18 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://54.235.233.109:8761/eureka
+      defaultZone: http://localhost:8761/eureka
+      #http://54.235.233.109:8761/eureka
       
 zuul:
   routes:
     userservice: /user/**
     itemservice: /item/**
+    authorizationservice: /uaa/**
+      #path: /uaa/**
+      #stripPrefix: false
+      #sensitiveHeaders:
+
   ignored-services: '*'
   prefix: /api
   sensitive-headers: Cookie, Set-Cookie

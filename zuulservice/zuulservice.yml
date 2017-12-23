@@ -52,4 +52,3 @@ management:
 itemservice.ribbon.ReadTimeout: 5000
 userservice.ribbon.ReadTimeout: 5000
 authorizationservice.ribbon.ReadTimeout: 5000
-    

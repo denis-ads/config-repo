@@ -50,8 +50,6 @@ logging:
     org.springframework.web: WARN
     com.itemsharing: DEBUG
 
-#security:
-#  oauth2:
-#    resource:
-#      userInfoUri: http://localhost:8901/user
-        #http://54.235.233.109:8901/user
+management:
+  security:
+    enabled: false

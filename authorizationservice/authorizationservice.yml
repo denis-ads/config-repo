@@ -19,12 +19,6 @@ spring:
     testWhileIdle: "true"
     validationQuery: "SELECT 1"
     driver-class: com.mysql.jdbc.Driver
-  
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
 
 security:
   oauth2:

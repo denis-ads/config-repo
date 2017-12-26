@@ -23,12 +23,19 @@ eureka:
       
 zuul:
   routes:
-    userservice: /user/**
-    itemservice: /item/**
-    authorizationservice: /uaa/**
-      #path: /uaa/**
-      #stripPrefix: false
-      #sensitiveHeaders:
+    userservice: 
+      path: /user/**
+      serviceId: userserver
+      stripPrefix: false
+    itemservice: 
+      path: /item/**
+      serviceId: itemserver
+      stripPrefix: false
+    authorizationservice: 
+      path: /uaa/**
+      stripPrefix: false
+      serviceId: authorizationserver
+
 
   ignored-services: '*'
   prefix: /api

@@ -84,18 +84,18 @@ zuul:
   routes:
     userservice: 
       #path: /user/**
-      url: http://userservice:8081/user
+      url: http://userservice:8081
       #serviceId: userservice
       stripPrefix: false
     itemservice: 
      # path: /item/**
-      url: http://itemservice:8082/item
+      url: http://itemservice:8082
       #serviceId: itemservice
       stripPrefix: false
     authorizationservice: 
       #path: /uaa/**
       stripPrefix: false
-      url: http://authorizationservice:8901/uaa
+      url: http://authorizationservice:8901
       #serviceId: authorizationservice
 
   ignored-services: '*'

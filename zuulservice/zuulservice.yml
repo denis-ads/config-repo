@@ -89,7 +89,7 @@ zuul:
       stripPrefix: false
     itemservice: 
       path: /item/**
-      url: http://userservice:8082/
+      url: http://itemservice:8082/
       serviceId: itemservice
       stripPrefix: false
     authorizationservice: 

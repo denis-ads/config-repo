@@ -82,27 +82,17 @@ eureka:
       
 zuul:
   routes:
-    userservice: 
-      #path: /user/**
-      url: http://userservice:8081
-      #serviceId: userservice
-      stripPrefix: false
-    itemservice: 
-     # path: /item/**
-      url: http://itemservice:8082
-      #serviceId: itemservice
-      stripPrefix: false
-    authorizationservice: 
+    userservice: /user/**
+    itemservice: /item/**
+    authorizationservice: /uaa/**
       #path: /uaa/**
-      stripPrefix: false
-      url: http://authorizationservice:8901
-      #serviceId: authorizationservice
+      #stripPrefix: false
+      #sensitiveHeaders:
 
   ignored-services: '*'
   #prefix: /api
   sensitive-headers: Cookie, Set-Cookie
-  
-    
+
 #Setting the logging levels for the service
 logging:
   level:

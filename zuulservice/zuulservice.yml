@@ -83,17 +83,17 @@ eureka:
 zuul:
   routes:
     userservice: 
-      path: /user/**
+      #path: /user/**
       url: http://userservice:8081/user
       #serviceId: userservice
       stripPrefix: false
     itemservice: 
-      path: /item/**
+     # path: /item/**
       url: http://itemservice:8082/item
       #serviceId: itemservice
       stripPrefix: false
     authorizationservice: 
-      path: /uaa/**
+      #path: /uaa/**
       stripPrefix: false
       url: http://authorizationservice:8901/uaa
       #serviceId: authorizationservice

@@ -81,14 +81,14 @@ security:
 server:
   port: 8901
   
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://eurekaservice:8761/eureka
+#eureka:
+#  instance:
+#    preferIpAddress: true
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: http://eurekaservice:8761/eureka
       
 signing:
   key: 345345fsdgsf5345
